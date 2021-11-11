@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/item_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"/>
+    <EditText
+        android:id="@+id/item_picker_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"/>
+
+    <TextView
+        android:id="@+id/total_hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0:0"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:gravity="center_horizontal" />
+    <Button
+        android:id="@+id/calculate_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="calculate"
+        android:onClick="timeCalculate"/>
+
+</LinearLayout>
